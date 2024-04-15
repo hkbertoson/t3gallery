@@ -1,4 +1,4 @@
-import { SignIn, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export function TopNav() {
   return (
@@ -7,7 +7,7 @@ export function TopNav() {
 
       <div>
         <SignedOut>
-          <SignIn />
+          <SignInButton />
         </SignedOut>
         <SignedIn>
           <UserButton />
