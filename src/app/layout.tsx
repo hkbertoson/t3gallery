@@ -26,7 +26,7 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <body className={`font-sans ${inter.variable}  flex flex-col gap-4`}>
           <TopNav />
-          {children}5
+          {children}
         </body>
       </html>
     </ClerkProvider>
