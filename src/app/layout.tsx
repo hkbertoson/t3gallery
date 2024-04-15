@@ -39,7 +39,10 @@ export default function RootLayout({
            */
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
-        <body className={`font-sans ${inter.variable}  flex flex-col gap-4`}>
+        <body
+          className={`font-sans ${inter.variable}  flex flex-col gap-4`}
+          suppressHydrationWarning={true}
+        >
           <TopNav />
           {children}
           {modal}
