@@ -40,7 +40,7 @@ export default function RootLayout({
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
         <body
-          className={`font-sans ${inter.variable}  flex flex-col gap-4`}
+          className={`font-sans ${inter.variable}  dark flex flex-col gap-4`}
           suppressHydrationWarning={true}
         >
           <div className="grid h-screen grid-rows-[auto,1fr]">
