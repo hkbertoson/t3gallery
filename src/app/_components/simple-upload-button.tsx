@@ -94,6 +94,11 @@ export function SimpleUploadButton() {
       toast.success("Image uploaded!");
       router.refresh();
     },
+    onUploadError(err) {
+      posthog.capture("upload_error", { err });
+      toast.dismiss("uploading-image");
+      toast.error("Upload Failed");
+    },
   });
   return (
     <div>
